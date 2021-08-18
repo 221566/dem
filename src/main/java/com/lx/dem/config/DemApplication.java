@@ -1,11 +1,13 @@
-package com.lx.dem;
+package com.lx.dem.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+@ComponentScan("com.lx")//扫描多个包可以{}包起来逗号隔开
 @SpringBootApplication
 public class DemApplication {
      private static final Logger LOG = LoggerFactory.getLogger(DemApplication.class);
