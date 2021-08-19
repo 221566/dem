@@ -1,3 +1,10 @@
-POST http://localhost:8080/hello
+POST http://localhost:8080/list
 Accept: application/json
 
+
+
+
+###
+POST http://localhost:8080//test/list
+
+###

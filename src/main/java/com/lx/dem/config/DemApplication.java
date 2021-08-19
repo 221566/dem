@@ -1,5 +1,6 @@
 package com.lx.dem.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -9,6 +10,7 @@ import org.springframework.core.env.Environment;
 
 @ComponentScan("com.lx")//扫描多个包可以{}包起来逗号隔开
 @SpringBootApplication
+@MapperScan("com.lx.dem.mapper")
 public class DemApplication {
      private static final Logger LOG = LoggerFactory.getLogger(DemApplication.class);
     public static void main(String[] args) {
